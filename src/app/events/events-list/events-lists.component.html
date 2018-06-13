@@ -1,0 +1,13 @@
+<div>
+  <h1>Event List</h1>
+  <hr>
+  <div>
+    <ul class="container">
+      <div class="row">
+        <div *ngFor="let event of events" class="col-md-5">
+            <event-thumbnail [event]="event"></event-thumbnail>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

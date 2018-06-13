@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-11">
+    <h2>{{eventDetails?.name}} </h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+    <div><strong>Date:</strong> {{eventDetails?.date | date:'yyyy-MM-dd HH:mm'}}</div>
+    <div><strong>Price:</strong> ${{eventDetails?.price}}</div>
+    </div>
+    <div class="col-md-6">
+    <address>
+        <strong>Address:</strong><br />
+        {{eventDetails?.location?.address}}<br />
+        {{eventDetails?.location?.city}}, {{eventDetails?.location?.country}}
+    </address>
+    </div>
+</div>
+</div>

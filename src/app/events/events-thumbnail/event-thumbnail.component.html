@@ -1,0 +1,10 @@
+<li [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
+    <h3>{{ event.name }}</h3>
+        <div>Date : {{event.date | date:'yyyy-MM-dd HH:mm'}}</div>
+        <div>Price : {{event.price}}</div>
+        <div>
+          <span>Location : {{event.location.address}}</span>
+          <span>&nbsp;</span>
+          <span>{{event.location.city}}, {{event.location.country}}</span>
+        </div>
+  </li>
